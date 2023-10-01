@@ -1,0 +1,296 @@
+@font-face {
+    font-family: 'lato_regular';
+    src: url('./assets/fonts/Lato-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'lato_bold';
+    src: url('./assets/fonts/Lato-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'lexend';
+    src: url('./assets/fonts/Lexend-VariableFont_wght.ttf') format('truetype'); 
+}
+@font-face {
+    font-family: 'frank_black';
+    src: url('./assets/fonts/FrankRuhlLibre-Black.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'frank_bold';
+    src: url('./assets/fonts/FrankRuhlLibre-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'inter_medium';
+    src: url('./assets/fonts/Inter-Medium.ttf') format('truetype');
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    background-color: #E5E5E5;
+}
+
+#parent_button {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* min-height: 720px; */
+}
+#parent {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* min-height: 720px; */
+}
+#parent_text {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    /* min-height: 720px; */
+}
+#container {
+    background-image: url('./assets/images/Vector.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    /* width: 130%; */
+}
+.col-left {
+    margin: 173px 150px 0px 0px;
+    min-width: 563px;
+    min-height: 446px;
+}
+.col-right {
+    margin: 128px 120px 29px 20px;
+}
+.col-left-primary {
+    margin: 105px 200px 0px 0px;
+    min-width: 520px;
+    min-height: 339px;
+}
+.col-left-primary-1 {
+    margin: 105px 440px 0px 100px;
+    min-width: 520px;
+    min-height: 339px;
+}
+
+.col-right-primary {
+    margin: 24px 0px 0px 20px;
+}
+.col-right-primary-1 {
+    margin: 24px 0px 0px 240px;
+}
+form {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    max-width: 600px;
+    flex-direction: column;
+    min-width: 600px;
+    min-height: 563px;
+}
+p.header {
+    font-family: 'frank_black', sans-serif;
+    font-size: 64px;
+}
+p.primary {
+    font-family: 'lato_regular', sans-serif;
+    font-size: 20px;
+}
+p.lato_bold {
+    font-family: 'lato_bold', sans-serif;
+    font-size: 16px;
+    color: black;
+}
+p.frank_bold {
+    font-family: 'frank_bold', sans-serif;
+    font-size: 32px;
+}
+p.lexend {
+    font-family: 'lexend';
+    font-size: 14px;
+}
+.border {
+    border-radius: 10px;
+    border: 2px solid #D1D5DB;
+}
+.eclipse {
+    margin-bottom: 10px;
+}
+.vector {
+    margin-left: 380px;
+    margin-top: -10px;
+}
+.line_active {
+    width: 165px;
+    height: 2px;
+    background-color: black;
+    margin-right: 10px;
+}
+.line {
+    width: 165px;
+    height: 2px;
+    background-color: #D1D5DB;
+    margin-right: 10px;
+}
+button.round {
+    font-family: 'inter_medium', sans-serif;
+    font-size: 12px;
+    color: #95A2AF;
+    margin-top: 55px;
+    margin-right: 40px;
+    cursor: pointer;
+    width: 140px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    box-sizing: border-box;
+    border: 2px solid #95A2AF;
+    border-radius: 5px;
+}
+button.round:hover {
+    border: 3px solid #007BFF;
+}
+button.primary {
+    border: 2px solid #007BFF;
+    margin-left: 50px;
+    font-family: 'inter_medium', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    width: 204px;
+    height: 38px;
+    color: aliceblue;
+    background-color: #007BFF;
+}
+button.secondary {
+    cursor: pointer;
+    font-family: 'inter_medium', sans-serif;
+    font-size: 14px;
+    width: 204px;
+    height: 38px;
+    color: #007BFF;
+    background-color: aliceblue;
+    border: 2px solid #007BFF;
+}
+div.drag {
+    margin-top: 10px;
+    color: #495057;
+    border: 2px dashed #AED0F1;
+    line-height: 200%;
+    width: 517px; 
+    height: 189px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column;
+    font-size: 12px;
+    font-family: 'lato_regular';
+}
+div.hover_button {
+    cursor: pointer;
+    
+    margin-right: 3px;
+    border-radius: 3px;
+}
+div.hover_button:hover {
+    cursor: pointer;
+    border-right: 3px solid #C4C4C4;
+}
+textarea {
+    line-height: 200%;
+    margin: 10px 0 0 0;
+    width: 93%;
+    height: 95px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border: 2px solid #D1D5DB;
+    border-radius: 10px;
+    background-color: aliceblue;
+    font-size: 12px;
+    resize: none;
+    font-family: 'lato_regular', sans-serif;
+}
+@media only screen and (min-width: 450px) and (max-width:1283px){
+    .col-left {
+        margin: 100px 60px 0px 100px;
+        min-width: 563px;
+        min-height: 446px;
+    }
+    .col-right {
+        margin: 100px 60px 29px 100px;
+    }
+    form {
+        display: flex;
+        max-width: 600px;
+        flex-direction: column;
+        min-width: 600px;
+        min-height: 563px;
+        margin-top: -100px;
+    }
+    .col-left {
+        margin: 50px 60px 0px 100px;
+        min-width: 0px;
+    }
+    .col-right-primary-1 {
+        margin: 50px 60px 0px 100px;
+    }
+    .col-right-primary {
+        margin: 50px 60px 0px 100px;
+    }
+    .col-left-primary {
+        margin: 50px 60px 0px 100px;
+        min-width: 0px;
+    }
+    .col-left-primary-1 {
+        margin: 50px 60px 0px 100px;
+        min-width: 0px;
+    }
+    #parent {
+        display: grid;
+        grid-template-columns: unset;
+    }
+}
+@media only screen and (min-width: 1284px) and (max-width: 1549px){
+    .col-left {
+        margin-left: 120px;
+        min-width: 563px;
+    }
+    .col-right-primary-1 {
+        margin-left: 120px;
+    }
+    .col-left-primary {
+        margin-left: 120px;
+        min-width: 520px;
+        margin-right:200px;
+    }
+    #parent {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    /* form {
+        min-width: 500px;
+    } */
+}
+@media only screen and (min-width: 1550px){
+    .col-left {
+        margin-left: 240px;
+        min-width: 600px;
+    }
+    .col-right-primary-1 {
+        margin-left: 240px;
+    }
+    .col-left-primary {
+        margin-left: 240px;
+        margin-right:200px;
+        min-width: 600px;
+    }
+    #parent {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    /* form {
+        min-width: 597px;
+    } */
+}
